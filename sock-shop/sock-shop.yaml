@@ -117,7 +117,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       volumes:
         - name: tmp-volume
@@ -238,7 +238,7 @@ spec:
           httpGet:
             path: /health
             port: 8080
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       nodeSelector:
         beta.kubernetes.io/os: linux
@@ -433,7 +433,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       volumes:
         - name: tmp-volume
@@ -505,7 +505,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       nodeSelector:
         beta.kubernetes.io/os: linux
@@ -564,7 +564,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       nodeSelector:
         beta.kubernetes.io/os: linux
@@ -692,7 +692,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       volumes:
         - name: tmp-volume
@@ -824,7 +824,7 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 180
+          initialDelaySeconds: 30
           periodSeconds: 3
       nodeSelector:
         beta.kubernetes.io/os: linux
