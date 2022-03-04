@@ -84,8 +84,8 @@ spec:
         ports:
          - containerPort: 80
         env:
-         - name: ZIPKIN
-           value: zipkin.jaeger.svc.cluster.local
+        #  - name: ZIPKIN
+        #    value: zipkin.jaeger.svc.cluster.local
          - name: JAVA_OPTS
            value: -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
         resources:
@@ -405,8 +405,8 @@ spec:
       - name: orders
         image: weaveworksdemos/orders:0.4.7
         env:
-         - name: ZIPKIN
-           value: zipkin.jaeger.svc.cluster.local
+        #  - name: ZIPKIN
+        #    value: zipkin.jaeger.svc.cluster.local
          - name: JAVA_OPTS
            value: -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
         ports:
@@ -657,8 +657,8 @@ spec:
       - name: shipping
         image: weaveworksdemos/shipping:0.4.8
         env:
-         - name: ZIPKIN
-           value: zipkin.jaeger.svc.cluster.local
+        #  - name: ZIPKIN
+        #    value: zipkin.jaeger.svc.cluster.local
          - name: JAVA_OPTS
            value: -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
         resources:
