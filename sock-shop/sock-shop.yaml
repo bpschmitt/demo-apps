@@ -90,11 +90,11 @@ spec:
            value: -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
         resources:
           limits:
-            cpu: 300m
-            memory: 500Mi
+            cpu: 150m
+            memory: 250Mi
           requests:
-            cpu: 300m
-            memory: 500Mi
+            cpu: 150m
+            memory: 250Mi
         securityContext:
           runAsNonRoot: true
           runAsUser: 10001
@@ -280,11 +280,11 @@ spec:
         image: weaveworksdemos/front-end:0.3.12
         resources:
           limits:
-            cpu: 400m
-            memory: 1000Mi
+            cpu: 200m
+            memory: 200Mi
           requests:
             cpu: 200m
-            memory: 300Mi
+            memory: 150Mi
         ports:
         - containerPort: 8079
         securityContext:
@@ -663,11 +663,11 @@ spec:
            value: -Xms64m -Xmx128m -XX:PermSize=32m -XX:MaxPermSize=64m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
         resources:
           limits:
-            cpu: 300m
-            memory: 500Mi
+            cpu: 150m
+            memory: 250Mi
           requests:
-            cpu: 300m
-            memory: 500Mi
+            cpu: 150m
+            memory: 250Mi
         ports:
         - containerPort: 80
         securityContext:
@@ -795,7 +795,7 @@ spec:
         image: weaveworksdemos/user:0.4.7
         resources:
           limits:
-            cpu: 300m
+            cpu: 200m
             memory: 100Mi
           requests:
             cpu: 100m
